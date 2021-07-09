@@ -1,0 +1,16 @@
+form {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  .inputSearch {
+    margin: 15px 0;
+    padding: 15px 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  input[type=text] {
+    font-size: 18px;
+  }
+}
