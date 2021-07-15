@@ -1,0 +1,30 @@
+.userDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  .avatar {
+    width: 200px;
+    height: 200px;
+    margin-right: 36px;
+    background-size: cover;
+    background-position: center;
+  }
+  .details {
+
+    li:not(:first-child) {
+      margin-top: 8px;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.bio {
+  color: tomato;
+  font-size: 18px;
+  display: block;
+  margin: 30px 0;
+  text-align: center;
+}

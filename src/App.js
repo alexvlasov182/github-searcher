@@ -1,16 +1,25 @@
-import Input from './components/Input/Input';
-import Title from './components/Title/Title';
-import MessageBox from './components/MessageBox/MessageBox';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import s from './App.module.scss';
+import MainPage from './pages/MainPage/MainPage';
+import UserPage from './pages/UserPage/UserPage';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className={s.App}>
-      <Title />
-      <Input />
-      <MessageBox />
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/" exact>
+          <MainPage />
+        </Route>
+        <Route path="/users/:id">
+          <UserPage />
+        </Route>
+        <Route path="*">
+          <h2>Page not found</h2>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

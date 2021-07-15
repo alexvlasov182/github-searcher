@@ -1,19 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import s from './Input.module.scss';
 
-const Input = () => {
+const Input = (props) => {
   return (
-    <form>
       <input
         className={s.inputSearch}
-        id="username"
-        placeholder="Search for Users"
-        name="username"
         type="text"
+        {...props}
       />
-    </form>
+
   );
 };
+
+Input.propTypes = {};
+
+Input.defaultProps = {};
 
 export default Input;
